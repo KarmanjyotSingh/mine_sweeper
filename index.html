@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -12,10 +18,18 @@
     <title>Mine-Sweeper</title>
   </head>
   <body>
-    <center>
-      <div class="container">
+    <div class="all-container">
+      <div class="tile-container">
+        <h1 class="heading">Mine-sweeper</h1>
+        <br />
+        <h3 style="color: var(--primary-color); text-transform: uppercase">
+          This Game has 10 mines distributed randomly..
+        </h3>
+        <br />
         <div class="title">
-          <h1 class="heading">Mine-sweeper</h1>
+          <span class="score-text">Score:</span>
+          <div class="score">0</div>
+          <br /><br /><br />
         </div>
         <div class="game-tiles">
           <div class="tile"></div>
@@ -119,11 +133,11 @@
           <div class="tile"></div>
           <div class="tile"></div>
         </div>
-        <button class="toggle">Dark Mode</button>
-        <div class="score">0</div>
       </div>
-    </center>
-
+      <div>
+        <button class="toggle">Dark Mode</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
