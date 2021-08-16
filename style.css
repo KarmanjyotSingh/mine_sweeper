@@ -12,10 +12,10 @@ html.dark {
   --secondary-color: #000;
 }
 html {
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.0005s;
 }
 html.dark {
-  background-color: #111;
+  background-color: #000;
   color: var(--primary-color);
 }
 body {
@@ -25,8 +25,11 @@ body {
   flex-direction: column;
   justify-content: center;
   vertical-align: middle;
+  color: var(--primary-color);
   height: 100vh;
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .toggle {
   cursor: pointer;
@@ -42,19 +45,26 @@ body {
 .toggle:focus {
   outline: none;
 }
-.container {
+.all-container {
+  background-color: var(--secondary-color);
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.tile-container {
   position: relative;
-  left: auto;
-  position: relative;
-  top: 100px;
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
   width: 550px;
-  height: auto;
+  height: 800px;
   padding: 50px;
-  border-right: 1px solid var(--primary-color);
-  border-left: 1px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
+  border-left: 2px solid var(--primary-color);
 }
 .game-tiles {
   display: flex;
@@ -69,8 +79,8 @@ body {
   font-size: 50px;
 }
 
-.tile:hover{
-  background-color:  rgb(97, 94, 94);
+.tile:hover {
+  background-color: rgb(97, 94, 94);
 }
 .tile {
   display: flex;
@@ -95,9 +105,22 @@ body {
   justify-content: center;
   visibility: hidden;
 }
+.score-text {
+  position: absolute;
+  display: inline;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 0;
+  left: 10px;
+  padding: 0;
+}
 .score {
   z-index: 10;
-  position: relative;
-  bottom: -100px;
-  font-size: 100px;
+  display: inline;
+  font-weight: bold;
+  margin:0;
+  position: absolute;
+  top: 259px;
+  left: 70px;
+  font-size: 20px;
 }
