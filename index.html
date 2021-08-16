@@ -22,14 +22,12 @@
       <div class="tile-container">
         <h1 class="heading">Mine-sweeper</h1>
         <br />
-        <h3 style="color: var(--primary-color); text-transform: uppercase">
-          This Game has 10 mines distributed randomly..
-        </h3>
         <br />
         <div class="title">
           <span class="score-text">Score:</span>
           <div class="score">0</div>
           <br /><br /><br />
+          <br><br><br>
         </div>
         <div class="game-tiles">
           <div class="tile"></div>
@@ -134,9 +132,28 @@
           <div class="tile"></div>
         </div>
       </div>
-      <div>
+      <div class="rules">
+        <ol>
+          <li> This game consists of a 10x10 grid, with 10 mines placed randomly
+          accross the grid. </li>
+          <li> uncover all the boxes except the one with mines, to win the game
+          Incase you click a mined box, game ends </li>
+          <li> you could enjoy the game in Light-Dark mode, use the toggle button
+          to switch have fun!!!!!!
+        </li>
+        </ol>
         <button class="toggle">Dark Mode</button>
       </div>
+      <div class="clock-container">
+      <div class="clock">
+        <div class="needle hour"></div>
+        <div class="needle minute"></div>
+        <div class="needle second"></div>
+        <div class="center-point"></div>
+      </div>
+      </div>
+  </div>
+
     </div>
     <script src="script.js"></script>
   </body>

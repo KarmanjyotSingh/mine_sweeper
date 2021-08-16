@@ -110,3 +110,6 @@ function mineFound() {
 }
 
 initGame();
+
+
+// clock 
